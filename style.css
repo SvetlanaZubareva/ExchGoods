@@ -22,7 +22,7 @@
     color: #0B101B;
     background-color: #ffff;
     min-width: 375px;
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
   }
   .main-header-list{
@@ -52,15 +52,21 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header-nav__list-item{
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header-nav__list-item:nth-child(1){
     display: grid;
     margin-right: 3%;
   }.header-nav__list-item:nth-child(2){
-    margin-right: 4%;
+    margin-right: 2%;
   }
   .header-nav__list-item:nth-child(3){
     border-radius: 10px;
@@ -71,18 +77,23 @@
     display: flex;
     justify-content: space-between;
     margin-right: 1%;
+    padding: 13px 1% 13px;
+    display: flex;
+    justify-content: space-around;
+    width: 223px;
   }
   .header-nav__list-item:nth-child(4){
     border-radius: 10px;
     height: 42px;
     background-color: rgba(255, 233, 233, 0.5);
     box-sizing: border-box;
-    padding: 13px 3% 13px;
+    padding: 13px 1% 13px;
     display: flex;
-    justify-content: space-between;
-    margin-right: 32%;
+    justify-content: space-around;
+    width: 199px;
+    margin-right: 39%;
   }
-  .header-nav__list-item:nth-child(4){
+  .header-nav__list-item:nth-child(5){
     margin-right: 2%;
   }
   .header-nav__list-link--color{
@@ -121,6 +132,7 @@
   .main__section{
     text-align: center;
     padding: 164px 0 264px;
+    width: 35%;
   }
   .main__header{
     margin: 0;
@@ -247,6 +259,7 @@
     line-height: 19px;
     font-weight: 400;
     color: #333333;
+    width: 150px;
  }
  .footer__paragraf{
     font-size: 16px;
@@ -254,17 +267,112 @@
     font-weight: 400;
     color: #333333;
  }
- .footer__div:nth-child(1){
-    margin-right: 20%;
- }
- .footer__div:nth-child(2){
-    margin-right: 10%;
- }
- .footer__div:nth-child(3){
-    margin-right: 10%;
- }
  .footer__list--grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30%;
  }
+ .header-nav__list-item--color{
+    background-color: rgba(246, 247, 250, 1);
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    border-radius: 10px;
+ }
+ .main__section--flex{
+    display: flex;
+    justify-content: space-between;
+ }
+ .main__svg{
+    width: 35%;
+ }
+ .header-nav__list-item--margin{
+    width: 4%;
+    justify-content: space-between;
+ }
+ .footer__list--flex{
+    display: flex;
+    width: 20px;
+    margin-bottom: 177px;
+ }
+ .footer__list-item:nth-child(1){
+    margin-right: 80%;
+ }
+ .footer__list-item:nth-child(2){
+    margin-right: 80%;
+ }
+ .footer__list-item:nth-child(3){
+    margin-right: 80%;
+ }
+ .footer__list-item:nth-child(4){
+    margin-right: 80%;
+ }
+ .footer__list-item:nth-child(5){
+    margin-right: 80%;
+ }
+ .footer__list-item:nth-child(1){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(2){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(3){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(4){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(5){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(6){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(7){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(9){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(10){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(11){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(12){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(13){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(14){
+    margin-bottom: 12px;
+ }
+ .footer__list-item:nth-child(15){
+    margin-bottom: 12px;
+ }
+ .section-catalog__div{
+    width: 48px;
+    height: 48px;
+    background-color: #F6F7FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1%;
+ }
+ .section-catalog__div--flex{
+    display: flex;
+    margin-bottom: 60px;
+ }
+ .section-catalog__list-item{
+    margin-right: 6%;
+ }
+ .section-catalog__list-item:nth-child(6){
+    margin-right: 0;
+ }
+ .section-catalog--margin{
+    margin-bottom: 82px;
+ }
+
  
