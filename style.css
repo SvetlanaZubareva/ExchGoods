@@ -25,6 +25,10 @@
     max-width: 100%;
     margin: 0 auto;
   }
+  button,
+  a{
+   cursor: pointer;
+  }
   .main-header-list{
     display: flex;
     justify-content: space-between;
@@ -91,7 +95,7 @@
     display: flex;
     justify-content: space-around;
     width: 199px;
-    margin-right: 39%;
+    margin-right: 20%;
   }
   .header-nav__list-item:nth-child(5){
     margin-right: 2%;
@@ -102,6 +106,7 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
+    width: 145px;
   }
   .header-nav__list{
     margin: 0;
@@ -123,6 +128,7 @@
     font-size: 16px;
     line-height: 19px;
     font-weight: 700;
+    width: 145px;
   }
   .header-nav__list-link--size{
     font-size: 14px;
@@ -150,7 +156,8 @@
  .section__list{
     display: flex;
     flex-wrap: wrap;
-    padding: 0 16% 0;
+    padding-left: 30%;
+    padding-top: 90px;
     margin: 0;
     list-style: none;
  }
@@ -162,12 +169,15 @@
     line-height: 48px;
     font-weight: 900;
     color: rgba(0, 0, 0, 1);
+    margin: 0;
+    margin-bottom: 16px;
  }
  .section__list-paragraf{
     font-size: 20px;
     line-height: 32px;
     font-weight: 400;
     color: #0B101B;
+    margin: 0;
  }
  .section__button{
     width: 242px;
@@ -178,24 +188,39 @@
     border: 0;
     border-radius: 10px;
     padding: 0;
+    transform: rotate(5deg);
+    margin: 40px 0 0;
+    position: relative;
+    left: -50px;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .section__button-paragraf{
     color: rgba(128, 141, 154, 1);
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    transform: rotate(5deg);
+    margin: 10px;
  }
  .section__list-size{
     font-size: 16px;
     line-height: 19px;
     font-weight: 400;
     color: #0B101B;
+    margin: 0;
+    transform: rotate(-5deg);
+    display: flex;
  }
  .section__span-size{
     font-size: 20px;
     line-height: 26px;
     font-weight: 900;
     color: #333333;
+    margin: 0;
+    transform: rotate(-5deg);
  }
  .section__span{
     font-size: 18px;
@@ -212,6 +237,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
  }
  .section-catalog__header{
     font-size: 16px;
@@ -225,7 +251,7 @@
     font-weight: 900;
     color: #333333;
  }
- .section-catalog__list{
+ .section-catalog__list--flex{
     display: flex;
  }
  .div-catalog{
@@ -281,7 +307,7 @@
  }
  .main__section--flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
  }
  .main__svg{
     width: 35%;
@@ -364,9 +390,11 @@
  .section-catalog__div--flex{
     display: flex;
     margin-bottom: 60px;
+    justify-content: space-between;
  }
  .section-catalog__list-item{
     margin-right: 6%;
+    display: flex;
  }
  .section-catalog__list-item:nth-child(6){
     margin-right: 0;
@@ -374,5 +402,186 @@
  .section-catalog--margin{
     margin-bottom: 82px;
  }
+ .section__list-item:nth-child(1){
+   width: 40%;
+ }
+ .section__list-item:nth-child(2){
+   width: 40%;
+   display: flex;
+   margin-bottom: 202px;
+ }
+ .section__list-item:nth-child(4){
+   margin-bottom: 140px;
+ }
+ .section__list-item:nth-child(3){
+   margin-bottom: 160px;
+   width: 25%;
+ }
+ .section__list-item{
+   width: 40%;
+ }
+.section__list-item__img{
+   padding: 50px 0 0;
+}
+.section__list-header--location{
+   text-align: end;
+}
+.section__list-item-transform{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(5deg)
+}
+.section__list-siz{
+   transform: rotate(0);
+}
+.section__list-item--transform{
+   transform: rotate(3deg);
+}
+.section-catalog__button{
+   border: 0;
+   width: 48px;
+   height: 48px;
+   box-sizing: border-box;
+   padding: 0;
+   border-radius: 15px;
+   background-color: #fff;
+}
+.section-catalog__header--big{
+   font-size: 26px;
+   line-height: 31px;
+   color: rgba(0, 0, 0, 1);
+   font-weight: 900;
+   margin: 0;
+   width: 362px;
+}
+.section-catalog__div--flex-icons{
+   display: flex;
+   align-items: center;
+   justify-content: space-between
+}
 
+.section-catalog__list-item-img{
+   border-radius: 5px;
+}
+.section-catalog__div--flex-icon{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+    width: 13%;
+}
+.section-catalog__list-item-blok{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+.section-catalog__list-item--svg{
+   margin-top: 75px;
+   margin-left: 1%;
+   margin-right: 1%;
+}
+.section-catalog__list-item{
+   width: 30%;
+   margin-right: 0;
+}
+.section-catalog__list-item--big{
+   width: 65%;
+}
+.section-catalog__list-item-one{
+   flex-direction: column;
+    margin-right: 6%;
+}
+.main__s{
+   background-image: url("./img/Frame\ 2222.png"), url("./img/Ellipse\ 77.png"), url("./img/Vector\ 193.png"), url("./img/Frame\ 2223.png");
+   background-repeat: no-repeat;
+   background-position: top left,58% 18%,51% 53%, top right;
+}
+.section-catalog__list-item-one{
+   width: 40%;
+}
+.section-catalog__list-item-img--size{
+   width: 111%;
+   height: 192px;
+}
+.section-catalog__list-item-img--size-min{
+   width: 50%;
+   height: 192px;
+}
+.catalog-list{
+   list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.control-mark--color{
+   background: #ffff;
+    border: 1px solid black;
+}
+
+
+.control {
+   position: relative;
+   display: block;
+   padding-left: 40px;
+ }
+ 
+ .control-mark {
+   position: absolute;
+   left: 0;
+   top: 2px;
+   width: 20px;
+   height: 20px;
+   background: rgba(255, 76, 80, 1);
+   border-radius: 4px;
+ }
+ .control-mark--color{
+   background-color: #ffff;
+   border:  1px solid #B9C3CD;
+   width: 20px;
+   height: 20px;
+ }
+ 
+ .control-input[type="checkbox"]:checked + .control-mark::before {
+   position: absolute;
+   top: 10px;
+   left: 2px;
+   width: 6px;
+   height: 2px;
+   background-color: #ffff;
+   content: "";
+ }
+ 
+ .control-input[type="checkbox"]:checked + .control-mark::after {
+   position: absolute;
+   top: 9px;
+   left: 5px;
+   width: 13px;
+   height: 2px;
+   background-color: #ffff;
+   content: "";
+ }
+ 
+ .control-input[type="checkbox"]:checked + .control-mark::before {
+   transform: rotate(230deg);
+ }
+ 
+ .control-input[type="checkbox"]:checked + .control-mark::after {
+   transform: rotate(-45deg);
+ }
+ 
+ .control-input[type="radio"] + .control-mark {
+   border-radius: 50%;
+ }
+ 
+ .control-input[type="radio"]:checked + .control-mark::before {
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   width: 10px;
+   height: 10px;
+   background-color: #3f5e72;
+   border-radius: 50%;
+   content: "";
+ }
  
