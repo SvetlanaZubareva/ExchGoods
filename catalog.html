@@ -271,14 +271,14 @@
                 </li>
                 
             </ul>
-            <ul class="list">
-                <li class="list__item">1</li>
-                <li class="list__item">2</li>
-                <li class="list__item">3</li>
-                <li class="list__item">4</li>
-                <li class="list__item">5</li>
-                <li class="list__item">6</li>
-                <li class="list__item">7</li>
+            <ul class="section-product__list">
+                <li class="section-product__list-item section-product__list-item--color">1</li>
+                <li class="section-product__list-item">2</li>
+                <li class="section-product__list-item">3</li>
+                <li class="section-product__list-item">4</li>
+                <li class="section-product__list-item">5</li>
+                <li class="section-product__list-item">6</li>
+                <li class="section-product__list-item">7</li>
             </ul>
         </section>
     </main>
@@ -378,5 +378,15 @@
             <p class="footer__paragraf">© 1764 – 2021 Exch/Goods. <br> Все права защищены.</p>
         </div>
     </footer>
+    <script>
+        const items = document.querySelectorAll('.section-product__list-item');
+
+            items.forEach(item => {
+            item.addEventListener('click', function() {
+            items.forEach(elem => elem.classList.remove('section-product__list-item--color'));
+            this.classList.add('section-product__list-item--color');
+  });
+})
+    </script>
 </body>
 </html>
