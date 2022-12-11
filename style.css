@@ -329,6 +329,7 @@
  .header-nav__list-item--margin{
     width: 4%;
     justify-content: space-between;
+    background-color: #ffff;
  }
  .header-nav{
    box-shadow: 0px 4px 48px rgba(28, 30, 67, 0.08);
@@ -930,7 +931,14 @@
 .list__item:hover{
    background: #F6F7FA
 }
-.header-nav__list-item::before{
+.header-nav__list-items{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.header-nav__list-items::before{
    position: absolute;
    width: 32px;
    height: 32px;
