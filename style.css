@@ -625,7 +625,7 @@
    position: relative;
    left: -20px;
    top: 110px;
-   z-index: 4;
+   z-index: 5;
  }
  .section__list-item__svg--posit{
    position: relative;
