@@ -966,6 +966,12 @@
     top: -10px;
     left: 200px;
 }
+.header-nav__list-item--color-index{
+   background-color: #ffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .section-catalog__svg--position{
    position: absolute;
     top: 60px;
@@ -1043,6 +1049,21 @@ li{
    justify-content: center;
    
 }
+
+.header-nav__list-item-index{
+   width: 109px;
+   height: 47px;
+   display: flex;
+   justify-content: space-between;
+   padding: 20px;
+   box-sizing: border-box;
+   font-size: 16px;
+   line-height: 19px;
+   width: 700;
+   color: #0B101B;
+   align-items: center;
+}
+
  @media(max-width:1200px){
    .header-nav__list-item:nth-child(2){
       display: none;
