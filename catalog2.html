@@ -146,12 +146,19 @@
                 <section class="main-catalog__section">
                     <h2 class="main-catalog__header">Фильтр</h2>
                     <p  class="main-catalog__paragraf-catalog2">Цена</p>
-                    <div id="slider" class="slider">
+                    
+                    <div class="main-catalog__div-catalog2" >
+                        <div id="range-slider" id="slider"  class="slider">
                         
-                    </div>
-                    <div class="main-catalog__div-catalog2">
-                        <input class="main-catalog__input main-catalog__input--margin" type="number" placeholder="От">
-                        <input class="main-catalog__input" type="number" placeholder="До">
+                        </div>
+                        <label class="main-catalog2__label">
+                            <span class="main-catalog2__span">От</span>
+                            <input class="main-catalog__input main-catalog__input--margin" min="1" max="10" type="number" placeholder="" id="input-0">
+                        </label>
+                        <label class="main-catalog2__label">
+                            <span class="main-catalog2__span">До</span>
+                            <input class="main-catalog__input" min="1" max="10" type="number" placeholder="" id="input-1">
+                        </label>
                     </div>
                 </section>
             </section>

@@ -1089,7 +1089,7 @@ li{
    width: 114px;
    height: 40px;
    border-radius: 10px;
-   padding: 10px 15px 10px;
+   padding: 10px 35px 10px;
    border: 1px solid rgba(128, 141, 154, 1);
    box-sizing: border-box;
 }
@@ -1112,6 +1112,19 @@ li{
 }
 .slider{
    margin-bottom: 29px;
+}
+.main-catalog2__label{
+   position: relative;
+}
+.main-catalog2__span{
+   position: absolute;
+   z-index: 5;
+   left: 10px;
+   top: 2px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
+   color: #808D9A;
 }
  @media(max-width:1200px){
    .header-nav__list-item:nth-child(2){
