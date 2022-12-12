@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name='viewport' content='width=device-width,initial-scale=1'/>
-<meta content='true' name='HandheldFriendly'/>
-<meta content='width' name='MobileOptimized'/>
-<meta content='yes' name='apple-mobile-web-app-capable'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
     <link rel="stylesheet" href="./style.css">
+    <link href="./node_modules/nouislider/dist/nouislider.css" rel="stylesheet">
+    <script src="./node_modules/nouislider/dist/nouislider.js"></script>
+    <link rel="stylesheet" href="./node_modules/nouislider/dist/nouislider.min.mjs">
+    
     <title>ExchGoods</title>
 </head>
 <body>
@@ -142,9 +146,12 @@
                 <section class="main-catalog__section">
                     <h2 class="main-catalog__header">Фильтр</h2>
                     <p  class="main-catalog__paragraf-catalog2">Цена</p>
+                    <div id="slider" class="slider">
+                        
+                    </div>
                     <div class="main-catalog__div-catalog2">
-                        <input class="main-catalog__input main-catalog__input--margin" type="text" placeholder="От">
-                        <input class="main-catalog__input" type="text" placeholder="До">
+                        <input class="main-catalog__input main-catalog__input--margin" type="number" placeholder="От">
+                        <input class="main-catalog__input" type="number" placeholder="До">
                     </div>
                 </section>
             </section>
@@ -344,5 +351,6 @@
             <p class="footer__paragraf">© 1764 – 2021 Exch/Goods. <br> Все права защищены.</p>
         </div>
     </footer>
+    <script src="./script.js"></script>    
 </body>
 </html>

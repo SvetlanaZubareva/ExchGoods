@@ -1110,6 +1110,9 @@ li{
 .section-catalog2__svg{
    margin-right: 8px;
 }
+.slider{
+   margin-bottom: 29px;
+}
  @media(max-width:1200px){
    .header-nav__list-item:nth-child(2){
       display: none;
@@ -1140,3 +1143,22 @@ li{
       display: grid;
    }
  }
+
+
+
+
+
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
