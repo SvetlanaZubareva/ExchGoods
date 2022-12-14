@@ -174,10 +174,10 @@
  .section__list{
     display: flex;
     flex-wrap: wrap;
-    padding-left: 30%;
     padding-top: 90px;
     margin: 0;
     list-style: none;
+    justify-content: center;
  }
  .section__list-item--color{
     color: rgba(255, 76, 80, 1);
@@ -267,6 +267,10 @@
     line-height: 26px;
     font-weight: 900;
     color: #333333;
+ }
+ .control-mark--color{
+   background: #FFFFFF;
+   border: 0.740228px solid #B9C3CD;
  }
  .section-catalog__list--flex{
     display: flex;
@@ -667,6 +671,9 @@
    background-color: #3f5e72;
    border-radius: 50%;
    content: "";
+ }
+ .control-input:active + .control-mark {
+   background: rgba(255, 255, 255, 0.3);
  }
  .section__list-item__svg--position{
    position: relative;
@@ -1420,7 +1427,20 @@ li{
 .footer__list--display-none{
    display: none;
 }
+.main__section--flex{
+   background-image: url("./img/Frame10.png");
+   background-repeat: no-repeat;
+   background-position: right;
+}
+.section-catalog__list-item--svg {
+   margin-top: 50px;
 
+}
+
+}
+.section{
+   justify-content: center;
+    display: flex;
 }
 
 
