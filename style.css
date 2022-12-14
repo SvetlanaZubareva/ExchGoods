@@ -1212,6 +1212,9 @@ li{
       padding-left: 3%;
     padding-right: 4%;
    }
+   .main__s-svg{
+      display: none;
+   }
    .footer__div--column{
       flex-direction: column;
       border: none;
