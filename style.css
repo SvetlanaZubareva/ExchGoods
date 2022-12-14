@@ -46,6 +46,9 @@
     list-style: none;
     font-size: 14px;
     line-height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .main-header-list__item--color{
     color: rgba(128, 141, 154, 1);
@@ -267,11 +270,12 @@
  }
  .section-catalog__list--flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
  }
  .div-catalog{
     padding: 64px 0 100px;
     padding-left: 3%;
+    padding-right: 3%;
  }
  .footer__list{
     list-style: none;
@@ -573,7 +577,7 @@
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 .control-mark--color{
@@ -1128,6 +1132,15 @@ li{
    line-height: 19px;
    color: #808D9A;
 }
+.margin{
+   margin-bottom: 10px;
+}
+.main-header-list--margin{
+   margin-right: 4px;
+}
+.section-catalog__div-button{
+   display: flex;
+}
  @media(max-width:1200px){
    .header-nav__list-item:nth-child(2){
       display: none;
@@ -1162,27 +1175,35 @@ li{
    }
    .section__list-item:nth-child(1){
       grid-row-start: 1;
+      
    }
    .section__list-item:nth-child(2){
       grid-row-start: 2;
+      
    }
    .section__list-item:nth-child(3){
       grid-row-start: 4;
+      
    }
    .section__list-item:nth-child(4){
       grid-row-start: 3;
+      
    }
    .section__list-item:nth-child(5){
       grid-row-start: 5;
+      
    }
    .section__list-item:nth-child(6){
       grid-row-start: 6;
+      
    }
    .section__list-item:nth-child(7){
       grid-row-start: 7;
+      width: 100%;
    }
    .section__list-item:nth-child(8){
       grid-row-start: 8;
+      
    }
    .main__s{
       background-image: none;
@@ -1200,6 +1221,50 @@ li{
    .header-nav__list-item:nth-child(4){
       margin-right: 0;
    }
+   .main__header{
+      font-size: 30px;
+      line-height: 36px;
+   }
+   .main__paragraf{
+      font-size: 16px;
+      line-height: 25px;
+   }
+   .section__list-header{
+      font-size: 24px;
+      line-height: 28px;
+   }
+   .section__list-paragraf{
+      font-size: 16px;
+      line-height: 25px;
+   }
+   .section__button-paragraf{
+      font-size: 13px;
+      line-height: 19px;
+   }
+   .section__list-size{
+      font-size: 9px;
+      line-height: 11px;
+   }
+   .catalog-list__item-img{
+      width: 164px;
+      height: 163px;
+   }
+   .section-catalog__list-item-img{
+      width: 61px;
+      height: 61px;
+   }
+   .section-catalog__list-item-img--size{
+      width: 126px;
+      height: 126px;
+   }
+   .section-catalog__list-item{
+      padding: 20px;
+      box-sizing: border-box;
+   }
+   .section-catalog__header--big{
+      width: 100%;
+   }
+   
  }
 
 
