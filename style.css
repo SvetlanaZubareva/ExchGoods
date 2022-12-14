@@ -11,6 +11,7 @@
   
   html {
     height: 100%;
+    overflow-x: hidden;
   }
   
   body {
@@ -24,6 +25,7 @@
     min-width: 375px;
     max-width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
   }
   button,
   a{
@@ -1173,7 +1175,16 @@ li{
 .select{
    display: none;
 }
+.section{
+   justify-content: center;
+    display: flex;
+}
  @media(max-width:1200px){
+   .section{
+      justify-content: center;
+       display: flex;
+       flex-direction: column;
+   }
    .footer{
       flex-direction: column;
    }
@@ -1263,6 +1274,7 @@ li{
    .section__list-item:nth-child(7){
       grid-row-start: 7;
       width: 100%;
+      display: block;
    }
    .section__list-item:nth-child(8){
       grid-row-start: 8;
@@ -1438,10 +1450,7 @@ li{
 }
 
 }
-.section{
-   justify-content: center;
-    display: flex;
-}
+
 
 
 
