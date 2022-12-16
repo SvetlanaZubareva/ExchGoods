@@ -1396,6 +1396,12 @@ li{
 .header-nav__list-item--catalog-width-svg-none{
    display: none;
 }
+.main-nav--closed{
+   display: none;
+}
+.section-catalog__item-catalog-svg{
+   display: none;
+}
 @media(max-width:520px){
    .section-catalog__list-catalog-item{
       justify-content: center;
@@ -1408,6 +1414,7 @@ li{
 }
 
  @media(max-width:1200px){
+   
    .main-nav--closed{
       display: none;
    }
