@@ -41,15 +41,21 @@
                         </svg>
                     </a>
                 </li>
-                <li class="header-nav__list-item--catalog-width">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="header-nav__list-item--catalog-width main-nav__toggle">
+                    <svg class="header-nav__list-item--catalog-width-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13.364.636a1 1 0 0 1 0 1.414L8.414 7l4.95 4.95a1 1 0 0 1-1.414 1.414L7 8.414l-4.95 4.95A1 1 0 0 1 .636 11.95L5.586 7 .636 2.05A1 1 0 0 1 2.05.636L7 5.586l4.95-4.95a1 1 0 0 1 1.414 0Z" fill="#fff"/>
+                    </svg>
+                    <svg class="header-nav__list-item--catalog-width-svg-none" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM7 1a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7ZM7 7a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7ZM6 14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1ZM4 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#fff"/>
                     </svg>
                      <a class="header-nav__list-link header-nav__list-link--color" href="">Правила обмена</a> 
                 </li>
                 <li class="header-nav__list-item--catalog-color">
-                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="header-nav__list-item--catalog-width-svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M.293.793a1 1 0 0 1 1.414 0L6 5.086 10.293.793a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414Z" fill="#B9C3CD"/>
+                    </svg>
+                    <svg class="header-nav__list-item--catalog-width-svg-none" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0a1 1 0 0 1 1 1v7h7a1 1 0 1 1 0 2h-7v7a1 1 0 1 1-2 0v-7H1a1 1 0 0 1 0-2h7V1a1 1 0 0 1 1-1Z" fill="#FF4C50"/>
                     </svg>
                      <a class="header-nav__list-link header-nav__list-link--color-links" href="">
                         Ваши вещи (32) 
@@ -60,7 +66,7 @@
                     <img src="./img/chinese-coin 1.png" alt="Коины" width="18px" height="20px">
                      <a class="header-nav__list-link" href="">Коины</a> 
                 </li>
-                <li class="header-nav__list-items header-nav__list-item--margin">
+                <li class="header-nav__list-items header-nav__list-item--margin header-nav__list-item--catalog-none">
                     <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.503 18.93A7.001 7.001 0 0 1 7.5 7.1V11a1 1 0 1 0 2 0V5a1 1 0 0 0-1-1h-6a1 1 0 0 0 0 2h3.292a9.001 9.001 0 0 0 5.71 14.945c.549.06.998-.393.998-.945 0-.552-.45-.992-.997-1.07ZM13.497 5.07A7.002 7.002 0 0 1 17.5 16.9V13a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2h-3.292a9.001 9.001 0 0 0-5.71-14.945c-.549-.06-.998.393-.998.945 0 .552.45.992.997 1.07Z" fill="#808D9A"/>
                     </svg>
@@ -72,6 +78,34 @@
                     </svg>
                </li>
             </ul>
+            <div class="popap main-nav--closed  main-nav--nojs main-nav">
+                <section class="main-catalog__section main-catalog__section--display">
+                    <section class="main-catalog__section main-catalog__section--display">
+                        <h2 class="main-catalog__header">Фильтр</h2>
+                        <p  class="main-catalog__paragraf-catalog2">Цена</p>
+                        
+                        <div class="main-catalog__div-catalog2" >
+                            <div id="range-slider" id="slider"  class="slider">
+                            
+                            </div>
+                            <label class="main-catalog2__label">
+                                <span class="main-catalog2__span">От</span>
+                                <input class="main-catalog__input main-catalog__input--margin" min="1" max="10" type="number" placeholder="" id="input-0">
+                            </label>
+                            <label class="main-catalog2__label">
+                                <span class="main-catalog2__span">До</span>
+                                <input class="main-catalog__input" min="1" max="10" type="number" placeholder="" id="input-1">
+                            </label>
+                        </div>
+                        <div class="popap__div">
+                            <button class="popap-button button popap-button--margin">Применить</button>
+                        </div>
+                        <div class="popap__div">
+                            <button class="popap-button button button popap-button--color">Отмена</button>
+                        </div>
+                    </section>
+                </section>
+            </div>
         </nav>
     </header>
     <main >
@@ -118,7 +152,7 @@
                 </li>
             </ul>
         </section>
-        <div class="main-catalog">
+        <div class="main-catalog main-catalog--display">
             <section class="main-catalog__section">
                 <h2 class="main-catalog__header">Категории</h2>
                 <ul class="main-catalog__list main-catalog__list--margin">
@@ -166,101 +200,117 @@
                 </section>
             </section>
             <section class="section-catalog">
-                <ul class="section-catalog__list-catalog">
-                    <li class="section-catalog__item-catalog">Сортировать по:</li>
-                    <li class="section-catalog__item-catalog">Цене</li>
-                    <li class="section-catalog__item-catalog">Рейтингу</li>
-                    <li class="section-catalog__item-catalog">Новизне</li>
-                    <li class="section-catalog__item-catalog">Просмотрам</li>
-                </ul>
+                <div class="section-catalog__list-catalog-div">
+                    <h2 class="section-catalog__list-catalog-h2">Сортировать по:</h2>
+                    <div class="section-catalog__class-div">
+                        <ul class="section-catalog__list-catalog">
+                            <li class="section-catalog__item-catalog">Цене</li>
+                            <li class="section-catalog__item-catalog">Рейтингу</li>
+                            <li class="section-catalog__item-catalog">Новизне</li>
+                            <li class="section-catalog__item-catalog">Просмотрам</li>
+                        </ul>
+                        <svg class="section-catalog__item-catalog-svg" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4V2H2v2.172a1 1 0 0 0 .293.707L8 10.586V16a1 1 0 0 0 .4.8L10 18v-7.414L14.586 6H8a1 1 0 0 1 0-2h8ZM6 11.414.879 6.293A3 3 0 0 1 0 4.172V2a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2.172a3 3 0 0 1-.879 2.12L12 11.415V18a2 2 0 0 1-3.2 1.6l-1.6-1.2A3 3 0 0 1 6 16v-4.586Z" fill="#B9C3CD"/>
+                        </svg>
+                    </div>   
+                </div>
                 <ul class="section-catalog__list-catalog-item">
                     <li class="section-catalog__item-catalog-item">
-                        <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
                         </svg>
                         <svg class="section-catalog__svg--position" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="44" height="44" rx="10" fill="#F6F7FA"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.253 15a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.424.324a2 2 0 0 0 2.417-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885l-1.479 1.478-1.47-1.471a6.283 6.283 0 0 0-8.886 0Z"fill="#808D9A"/>
-                        </svg>
-                        <img src="./img/Фотка вещи (2).jpg" alt="Шина">
+                            <rect width="44" height="44" rx="10" fill="#F6F7FA"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.253 15a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.424.324a2 2 0 0 0 2.417-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885l-1.479 1.478-1.47-1.471a6.283 6.283 0 0 0-8.886 0Z" fill="#808D9A"/>
+                        </svg> -->
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">16 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">520 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">45 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">84 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">16 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">520 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">45 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">84 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">16 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">520 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">45 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">84 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">16 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">520 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">45 000 ₽</span>
                     </li>
                     <li class="section-catalog__item-catalog-item">
-                        <img src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
                         <p class="section-catalog__p-catalog">Наименование вещи</p>
                         <span class="section-catalog__span-catalog">84 000 ₽</span>
                     </li>
                     
+                </ul>
+                <ul class="section-product__list">
+                    <li class="section-product__list-item section-product__list-item--color">1</li>
+                    <li class="section-product__list-item">2</li>
+                    <li class="section-product__list-item">3</li>
+                    <li class="section-product__list-item">4</li>
+                    <li class="section-product__list-item">5</li>
+                    <li class="section-product__list-item">6</li>
+                    <li class="section-product__list-item">7</li>
                 </ul>
             </section>
         </div>
@@ -268,7 +318,7 @@
     <footer class="footer">
         <div class="footer__div">
             <h2 class="footer__header">Основные категории</h2>
-            <ul class="footer__list footer__list--grid">
+            <ul class="footer__list footer__list--grid footer__list--display-none">
                 <li class="footer__list-item">Категория 1</li>
                 <li class="footer__list-item">Категория 9</li>
                 <li class="footer__list-item">Категория 2</li>
@@ -286,10 +336,30 @@
                 <li class="footer__list-item">Категория 8</li>
                 <li class="footer__list-item">Категория 16</li>
             </ul>
+            <select class="select" name="select">
+                <option value="value1" selected></option>
+                <option value="value1" >Категория 1</option>
+                <option value="value2" >Категория 2</option>
+                <option value="value3">Категория 3</option>
+                <option value="value4" >Категория 4</option>
+                <option value="value5">Категория 5</option>
+                <option value="value6" >Категория 6</option>
+                <option value="value7">Категория 7</option>
+                <option value="value8" >Категория 8</option>
+                <option value="value9">Категория 9</option>
+                <option value="value10" >Категория 10</option>
+                <option value="value11">Категория 11</option>
+                <option value="value12" >Категория 12</option>
+                <option value="value13">Категория 13</option>
+                <option value="value14" >Категория 14</option>
+                <option value="value15">Категория 15</option>
+                <option value="value16" >Категория 16</option>
+                <option value="value17" >Категория 17</option>
+            </select>
         </div>
         <div class="footer__div">
             <h2 class="footer__header">Компания</h2>
-            <ul class="footer__list">
+            <ul class="footer__list footer__list--display-none">
                 <li class="footer__list-item">О нас</li>
                 <li class="footer__list-item">Услуги</li>
                 <li class="footer__list-item">Новости</li>
@@ -297,16 +367,31 @@
                 <li class="footer__list-item">Реквизиты</li>
                 <li class="footer__list-item">Обратная связь</li>
             </ul>
+            <select class="select" name="select">
+                <option value="value1" selected></option>
+                <option value="value1" >О нас</option>
+                <option value="value2" >Услуги</option>
+                <option value="value3">Новости</option>
+                <option value="value4" >Вакансии</option>
+                <option value="value5">Реквизиты</option>
+                <option value="value6" >Обратная связь</option>
+            </select>
         </div>
         <div class="footer__div">
             <h2 class="footer__header">Помощь</h2>
-            <ul class="footer__list">
+            <ul class="footer__list footer__list--display-none">
                 <li class="footer__list-item">Как совершать обмен</li>
                 <li class="footer__list-item">Безопасность сделки</li>
                 <li class="footer__list-item">Реквизиты</li>
             </ul>
+            <select class="select" name="select">
+                <option value="value1" selected></option>
+                <option value="value1" >Как совершать обмен</option>
+                <option value="value2" >Безопасность сделки</option>
+                <option value="value3">Реквизиты</option>
+            </select>
         </div>
-        <div class="footer__div">
+        <div class="footer__div footer__div--column">
             <h2 class="footer__header">Мы в соцсетях</h2>
             <ul class="footer__list footer__list--flex">
                 <li class="footer__list-item">
