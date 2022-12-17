@@ -59,3 +59,14 @@ if (navMain.classList.contains('main-nav--closed')) {
     })
     
     }
+
+
+
+    const items = document.querySelectorAll('.section-product__list-item1');
+
+items.forEach(item => {
+item.addEventListener('click', function() {
+items.forEach(elem => elem.classList.remove('section-product__list-item--color1'));
+this.classList.add('section-product__list-item--color1');
+});
+})
