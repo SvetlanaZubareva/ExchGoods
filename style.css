@@ -1719,8 +1719,10 @@ li{
    }
    .exchange-page__section{
       margin-top: 32px;
+      margin-bottom: 50px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
    }
    .exchange-page__section-one{
       padding: 12px 3% 32px;
@@ -1729,6 +1731,7 @@ li{
       border-radius: 10px;
       width: 45%;
       box-sizing: border-box;
+      height: 339px;
    }
    .exchange-page__section-two{
       padding: 28px 3% 32px;
@@ -1736,6 +1739,7 @@ li{
       border-radius: 10px;
       width: 45%;
       box-sizing: border-box;
+      height: 339px;
    }
    .exchange-page__div{
       display: flex;
@@ -1747,10 +1751,119 @@ li{
       align-items: center;
    }
    .exchange-page__div-img-one{
+      text-align: center;
+   }
+   .exchange-page__div--margin{
+      margin-bottom: 30px;
+   }
+   .exchange-page__div-img-two{
       display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+   }
+   .img-exchange-page{
+      margin-right: 24px;
+   }
+   .exchange-page__div--margin-div{
+      margin-bottom: 50px;
+   }
+   .img-page--boxshadow{
+      filter: drop-shadow(0px 0px 48px rgba(28, 30, 67, 0.08));
+   }
+   .exchange-page__div-img-one--pading{
+      padding-bottom: 20px;
+   }
+   .img-page--boxshadow-margin{
+      margin-right: 45px;
+   }
+   .exchange-page__modal{
+      border-radius: 10px;
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+      width: 656px;
+      padding: 20px 1% 12px;
+   }
+   .exchange-page--flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   .exchange-page__modal-div{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+   }
+   .exchange-page__modal-div-button{
+      width: 166px;
+      height: 54px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+      background: #FFF4F4;
+      border-radius: 10px;
+   }
+   .exchange-page__modal-div-button-one{
+      width: 430px;
+      height: 54px;
+      left: 206px;
+      top: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+      background: #FF4C50;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .exchange-page__modal-div-button-svg{
+      margin-right: 10px;
+   }
+   .exchange-page__modal-div-p{
+      text-align: center;
+      margin-bottom: 48px;
+   }
+   .exchange-page__modal-div-one{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 155px;
+   }
+   .chat{
+      padding: 10px;
+      background: #E8EBEF;
+      border-radius: 20px 20px 20px 5px;
+      box-sizing: border-box;
+      width: 239px;
+      margin-right: 24px;
+   }
+   .chat-one{
+      width: 239px;
+      background: #FF4C50;
+      border-radius: 20px 20px 5px 20px;
+      box-sizing: border-box;
+      width: 239px;
+      padding: 10px;
+      margin-left: 410px;
+      margin-top: 20px;
+      margin-bottom: 30px
+   }
+   .exchange-input{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .exchange-input__input{
+      padding: 8px 16px 10px;
+      width: 604px;
+      height: 38px;
+      background: #F6F7FA;
+      border-radius: 35px;
+      box-sizing: border-box;
+      border: none;
+   }
+   .header-nav__list-item--catalog-width-a{
+      display: flex;
    }
 @media(max-width:520px){
    .section-catalog__list-catalog-item{
