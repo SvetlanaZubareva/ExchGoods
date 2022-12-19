@@ -1878,6 +1878,76 @@ li{
    .exchange-page__div-img-one--none{
       display: none;
    }
+   .button-div-exchange-page2__button{
+      width: 487px;
+      height: 47px;
+      background: #F6F7FA;
+      border-radius: 10px;
+      box-sizing: border-box;
+      border: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #FF4C50;
+   }
+   .exchange-page__modal-div-button-one2{
+      width: 487px;
+      height: 47px;
+   }
+   .exchange-page__modal-div-button2{
+      width: 487px;
+      height: 47px;
+   }
+   .div-question{
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #F6F7FA;
+      border: 1px solid #BBC4DE;
+      border-radius: 50%;
+      margin-left: 10px;
+   }
+   .button-div-exchange-page2--flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 11px;
+   }
+   .footer__paragraf-button{
+      width: 56px;
+      height: 56px;
+      background: #FF4C50;
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+      border-radius: 100px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .footer__paragraf--flex2{
+      display: flex;
+      align-items: center;
+   }
+   .exchange-page2__modal--color{
+      background-color: #ffff;
+      width: 340px;
+   }
+   .page-div__div--flex2{
+      margin-bottom: 211px;
+   }
+   .chat-one2{
+      margin-left: 85px;
+   }
+   .exchange-page--flex2{
+      position: absolute;
+      top: 700px;
+      left: 1150px;
+   }
 
 @media(max-width:520px){
    .section-catalog__list-catalog-item{
@@ -1891,6 +1961,15 @@ li{
 }
 
  @media(max-width:1200px){
+   ..exchange-page2__modal--color{
+      display: none;
+   }
+   .footer__paragraf-button{
+      display: none;
+   }
+   .button-div-exchange-page2{
+      display: none;
+   }
    .exchange-input__input{
       max-width: 273px;
    }
