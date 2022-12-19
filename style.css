@@ -1869,6 +1869,16 @@ li{
    .header-nav__list-item--catalog-width-a{
       display: flex;
    }
+   .footer__exchange-page__button{
+      display: none;
+   }
+   .exchange-page__modal-footer{
+      display: none;
+   }
+   .exchange-page__div-img-one--none{
+      display: none;
+   }
+
 @media(max-width:520px){
    .section-catalog__list-catalog-item{
       justify-content: center;
@@ -1881,6 +1891,82 @@ li{
 }
 
  @media(max-width:1200px){
+   .exchange-input__input{
+      max-width: 273px;
+   }
+   .chat-one{
+      margin-left: 35%;
+   }
+   .img-exchange-page{
+      width: 74px;
+      height: 74px;
+   }
+   .exchange-page__div-img-one--none{
+      display: block;
+   }
+   .page-div__div--flex--none{
+      display: none;
+   }
+   .exchange-page__modal-div-one-footer-svg{
+      margin-right: 10px;
+   }
+   .page-div__div--flex{
+      padding: 15px 0 15px;
+      border-bottom: 1px solid #B9C3CD;
+   }
+   .exchange-page__modal-div-one-p{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #B9C3CD;
+   }
+   .exchange-page__modal-div-one{
+      display: block;
+   }
+   .exchange-page__modal-footer{
+      display: block;
+      width: 100%;
+      background: #ffff;
+      position: absolute;
+      top: 940px;
+      box-shadow: none;
+      border-radius: 10px;
+      max-width: 400px;
+   }
+   .footer-exchange{
+      padding-bottom: 0;
+   }
+   .footer__exchange-page__button{
+      border-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffff;
+      padding: 10px 3% 10px;
+   }
+   .footer__exchange-page__button-mobile{
+      width: 54px;
+      height: 54px;
+      background: #FF4C50;
+      border-radius: 10px;
+      box-sizing: border-box;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .exchange-page__modal-div-button-one{
+      width: 177px;
+      height: 54px;
+   }
+   .exchange-page__modal-div-button{
+      width: 104px;
+      height: 54px;
+   }
+   .exchange-page__div-span-span{
+      margin: 15px 0 15px;
+   }
    .exchange-page--flex{
       display: none;
    }
