@@ -1948,6 +1948,131 @@ li{
       top: 700px;
       left: 1150px;
    }
+   .exchange-page3-div__h2{
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 26px;
+      margin: 0;
+      margin-bottom: 23px;
+   }
+   .exchange-page3-div__p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+   }
+   .exchange-page3__button{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      width: 415px;
+      height: 54px;
+      box-sizing: border-box;
+      padding: 10px;
+      background: #FF4C50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      border-radius: 10px;
+      color: #FFFFFF;
+   }
+   .exchange-page3-map{
+      width: 600px;
+      height: 417px;
+      border-radius: 20px;
+   }
+   .exchange-page3{
+      margin-top: 39px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 33px;
+   }
+   .exchange-page3-div{
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+      border-radius: 10px;
+      padding-top: 21px;
+      padding-left: 39px;
+      padding-right: 45px;
+      padding-bottom: 20px;
+      width: 719px;
+      height: 417px;
+   }
+   .exchange-page3-div__list-item{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 13px;
+   }
+   .exchange-page3-div__list-item__div{
+      display: flex;
+      justify-content: space-between;
+      
+   }
+   .exchange-page3-div__list-item__div-img{
+      margin-right: 16px;
+   }
+   .select--display{
+      display: block;
+      width: 283px;
+      height: 55px;
+      color: rgba(128, 141, 154, 1);
+      background: #FFFFFF;
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+      border-radius: 10px;
+      box-sizing: border-box;
+      border: none;
+   }
+   .exchange-page3-div__list{
+      margin-bottom: 25px;
+   }
+   .exchange-page3-div__button{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .exchange-page3__one{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .exchange-page3__div-img-one{
+      display: flex;
+      margin-right: 35px;
+      
+   }
+   .exchange-page3-div__h2--margin{
+      margin-right: 16px;
+   }
+   .exchange-page3-div__img--margin{
+      margin-left: 8px;
+      margin-right: 16px;
+      
+   }
+   .exchange-page3-div__img--margin-border{
+      border: 5px solid #FF4C50;
+      filter: drop-shadow(0px 0px 48px rgba(28, 30, 67, 0.08));
+      border-radius: 5px;
+      margin-right: 0;
+   }
+   .exchange-page3__div-img-one__div--flex{
+      text-align: center;
+   }
+   .exchange-page3-div__list-item:hover{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+      border-radius: 10px;
+   }
+   .exchange-page3__section-one{
+      background-color: #ffff;
+      width: 592px;
+      box-shadow: none;
+      border: none;
+      border-radius: 10px;
+      top: -400px;
+      left: -450px;
+      border: 10px;
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+   }
+
 
 @media(max-width:520px){
    .section-catalog__list-catalog-item{
