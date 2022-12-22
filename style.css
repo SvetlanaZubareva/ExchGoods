@@ -2223,8 +2223,75 @@ li{
    .add-to-exchange--color-display{
       display: none;
    }
+   .add-to-exchange2__modal-div{
+      margin-top: 23px;
+      padding: 0 5% 0;
+      align-items: start;
+   }
+   .add-to-exchange2__button{
+      width: 507px;
+   }
+   .add-to-exchange2__button--color{
+      width: 501px;
+      height: 8px;
+      margin-top: 10px;
+      background: #FF4C50;
+      border-radius: 10px;
+      margin-bottom: 74px;
+   }
+   .add-to-exchange2__button-width{
+      width: 162px;
+      height: 42px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 24px;
+   }
+   .add-to-exchange2__button-width-color{
+      width: 162px;
+      height: 42px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 24px;
+      background: #FFF4F4;
+   }
+   .add-to-exchange2__section{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   .add-to-exchange2__section-div{
+      box-shadow: 0px 0px 84px rgba(28, 30, 67, 0.09);
+      border-radius: 10px;
+      margin-bottom: 30px;
+   }
+   .add-to-exchange2__section-div--color{
+      background: #FFEBCD;
+   }
+   .add-to-exchange2__section-h2{
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 31px;
+      margin-bottom: 30px;
+   }
+   .exchange-page__div-img--flex{
+      flex-wrap: wrap;
+   }
+   .add-to-exchange2__button-width--margin{
+      margin: 0 20px 0;
+   }
+   .add-to-exchange2__button--margin{
+      margin-right: 20px
+   }
+   .display-modile{
+      display: none;
+   }
 
 @media(max-width:520px){
+   .none{
+      display: none;
+   }
    .section-catalog__list-catalog-item{
       justify-content: center;
    }
@@ -2236,6 +2303,50 @@ li{
 }
 
  @media(max-width:1200px){
+   .none{
+      display: none;
+   }
+   .add-to-exchange2__button-width-color{
+      width: 165px;
+      height: 47px;
+      color: #ffff;
+      background: #FF4C50;
+   }
+   .add-to-exchange2__button-width--margin{
+      margin: 0;
+   }
+   .add-to-exchange2__button-width{
+      width: 165px;
+      height: 47px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      width: 165px;
+      height: 47px;
+      border: none;
+      color: #FF4C50;
+      background: #FFF4F4;
+      border-radius: 10px;
+   }
+   .add-to-exchange2__button-width--margin{
+      display: flex;
+      justify-content: space-between;
+   }
+   .add-to-exchange2__section-div--color{
+      background: #ffff;
+   }
+   .display-modile{
+      width: 100%;
+   }
+   .add-to-exchange2__section{
+      flex-direction: column;
+   }
+   .add-to-exchange2__modal-div{
+      display: none;
+   }
+   .display-modile{
+      display: block;
+   }
    .add-to-exchange--color-display{
       display: block;
       margin-bottom: 10px;
@@ -2282,61 +2393,6 @@ li{
    display: flex;
    width: 100%;
   }
-  
-   
-   /* .add-to-exchange__li:nth-child(1){
-      display: none;
-   }
-   .add-to-exchange__li:nth-child(2){
-      display: none;
-   }
-   .add-to-exchange__li:nth-child(3){
-      display: none;
-   }
-   .add-to-exchange__li:nth-child(4){
-      display: none;
-   }
-   .add-to-exchange__li:nth-child(7){
-      display: none;
-   }
-   .exchange-page3-div__p {
-      margin-right: 260px;
-      margin-bottom: 10px;
-  }
-   .exchange-page5__button{
-      display: flex;
-      justify-content: center;
-   }
-   .add-to-exchange-div1__div-span{
-      position: absolute;
-      left: 300px;
-   }
-   .exchange-page3-div__label{
-      display: flex;
-      justify-content: center;
-   }
-   .add-to-exchange-div1-h2{
-      text-align: center;
-   }
-   .add-to-exchange--color{
-      width: 345px;
-   }
-   .add-to-exchange-div1__div{
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-      align-items: center
-      
-   }
-   .exchange-page3-div__p--width{
-      margin-right: 0;
-   }
-   .add-to-exchange-section{
-      flex-direction: column;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   } */
    .map{
       width: 100%;
    }
@@ -3122,6 +3178,15 @@ li{
 .block{
    left: -60px;
 }
+.none{
+   display: none;
+}
+.add-to-exchange2__button-width--margin{
+   width: 100%;
+}
+.exchange-page3__link{
+   margin-bottom: 20px;
+}
 }
 .page-body--color{
    opacity: 0.5;
@@ -3136,6 +3201,9 @@ li{
    display: flex;
    justify-content: center;
    align-items: center;
+}
+.add-to-exchange2__button-width--margin-none{
+   display: none;
 }
 
 
