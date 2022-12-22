@@ -2287,6 +2287,9 @@ li{
    .display-modile{
       display: none;
    }
+   .add-to-exchange2__button-width--margin-none{
+      display: none;
+   }
 
 @media(max-width:520px){
    .none{
@@ -3187,6 +3190,9 @@ li{
 .exchange-page3__link{
    margin-bottom: 20px;
 }
+/* .add-to-exchange2__button-width--margin-none{
+   display: block;
+} */
 }
 .page-body--color{
    opacity: 0.5;
@@ -3202,9 +3208,7 @@ li{
    justify-content: center;
    align-items: center;
 }
-.add-to-exchange2__button-width--margin-none{
-   display: none;
-}
+
 
 
 
