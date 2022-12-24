@@ -88,7 +88,7 @@
             </ul>
         </nav>
     </header>
-    <main class="exchange-page">
+    <main class="exchange-page page-body2">
         <a class="exchange-page__link" href="page.html">
             <svg class="exchange-page__link-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M6.707.293a1 1 0 0 1 0 1.414L2.414 6l4.293 4.293a1 1 0 1 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0Z" fill="#B9C3CD"/>
@@ -367,6 +367,14 @@
     <script>
         let navMain = document.querySelector('.main-nav');
         let navToggle = document.querySelector('.main-nav__toggle');
+        let closed = document.querySelector('.popap-button--closed');
+        let body = document.querySelector(".page-body")
+        let body2 = document.querySelector(".page-body2")
+        let body3 = document.querySelector(".page-body3")
+        let body4 = document.querySelector(".page-body4")
+        let body5 = document.querySelector(".page-body5")
+        let body6 = document.querySelector(".page-body6")
+
 
         navMain.classList.remove('main-nav--nojs');
 
@@ -374,12 +382,44 @@
         if (navMain.classList.contains('main-nav--closed')) {
             navMain.classList.remove('main-nav--closed');
             navMain.classList.add('main-nav--opened');
-
+            body.classList.add("page-body--color");
+            body2.classList.add("page-body--color");
+            body3.classList.add("page-body--color");
+            body4.classList.add("page-body--color");
+            body5.classList.add("page-body--color");
+            body6.classList.add("page-body--color");
         } else {
             navMain.classList.add('main-nav--closed');
             navMain.classList.remove('main-nav--opened');
+            body.classList.remove("page-body--color");
+            body2.classList.remove("page-body--color");
+            body3.classList.remove("page-body--color");
+            body4.classList.remove("page-body--color");
+            body5.classList.remove("page-body--color");
+            body6.classList.remove("page-body--color");
         }
-        }); 
+        });   
+        closed.addEventListener('click', function () {
+        if (navMain.classList.contains('main-nav--closed')) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+            body.classList.add("page-body--color");
+            body2.classList.add("page-body--color");
+            body3.classList.add("page-body--color");
+            body4.classList.add("page-body--color");
+            body5.classList.add("page-body--color");
+            body6.classList.add("page-body--color");
+        } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+            body.classList.remove("page-body--color");
+            body2.classList.remove("page-body--color");
+            body3.classList.remove("page-body--color");
+            body4.classList.remove("page-body--color");
+            body5.classList.remove("page-body--color");
+            body6.classList.remove("page-body--color");
+        }
+        });  
     </script>
 </body>
 </html>

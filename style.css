@@ -567,6 +567,62 @@
     box-sizing: border-box;
     z-index: 9;
 }
+.popap-nav-personal{
+   background-color: #ffff;
+   height: 364px;
+   box-shadow: 0px 0px 30px rgba(28, 30, 67, 0.12);
+   border-radius: 10px;
+   padding: 30px 20px;
+    box-sizing: border-box;
+}
+.main-personal__div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 700;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   color: #0B101B;
+   background: #F6F7FA;
+   height: 47px;
+   padding: 0 20px 0;
+   border-radius: 10px;
+   margin: 15px 0 10px;
+   border: none;
+   width: 100%;
+
+}
+.main-personal__div--color{
+   width: 28px;
+   height: 28px;
+   border-radius: 50%;
+   background: #FF4C50;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #FFFFFF;
+}
+.main-personal__span--color{
+   color: #FF4C50;
+}
+.main-personal__div--color1{
+   background: #FFFFFF;
+   box-shadow: 0px 0px 30px rgba(28, 30, 67, 0.12);
+   border-radius: 10px;
+}
+.main-personal__svg{
+   margin-right: 10px;
+}
+.main-personal__div-text{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .popap-nav__button{
    font-weight: 700;
    font-size: 16px;
@@ -2381,6 +2437,24 @@ li{
    .popap__div{
       display: none;
    }
+   .add-to-exchange__li--color{
+      border: 2px solid #FF4C50;
+      position: relative;
+   }
+   .add-to-exchange__li--color-svg{
+      position: absolute;
+      top: -10px;
+      left: 70px;
+   }
+   .add-to-exchange__li--color-svg1{
+      left: 140px;
+   }
+   .header-nav__list-item-img--margin{
+      margin-right: 10px;
+   }
+   .header-nav__list-item-img--margin1{
+      margin-left: 10px;
+   }
    @media(max-width:1400px){
       .header-nav__list-item:nth-child(4){
          margin-right: 25%;
@@ -2407,6 +2481,12 @@ li{
 }
 
  @media(max-width:1200px){
+   .add-to-exchange__li--color{
+      border: none;
+   }
+   .add-to-exchange__li--color-svg{
+      display: none;
+   }
    .header-nav__list-item-img--margin1 {
       margin-left: 0px;
   }
@@ -3327,7 +3407,7 @@ li{
 
 
 .page-body--color{
-   opacity: 0.5;
+   opacity: 0.2;
 }
 .popapa__div-page-svg{
    margin-right: 10px;
