@@ -41,28 +41,30 @@
                         </svg>
                     </a>
                 </li>
-                <li class="header-nav__list-item--catalog-width main-nav__toggle">
+                <li class="header-nav__list-item--catalog-width">
                     <svg class="header-nav__list-item--catalog-width-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M13.364.636a1 1 0 0 1 0 1.414L8.414 7l4.95 4.95a1 1 0 0 1-1.414 1.414L7 8.414l-4.95 4.95A1 1 0 0 1 .636 11.95L5.586 7 .636 2.05A1 1 0 0 1 2.05.636L7 5.586l4.95-4.95a1 1 0 0 1 1.414 0Z" fill="#fff"/>
                     </svg>
                     <svg class="header-nav__list-item--catalog-width-svg-none" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM7 1a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7ZM7 7a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7ZM6 14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1ZM4 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#fff"/>
                     </svg>
-                     <a class="header-nav__list-link header-nav__list-link--color" href="">Правила обмена</a> 
+                     <a class="header-nav__list-link header-nav__list-link--color" href="">Смотреть каталог</a> 
                 </li>
-                <li class="header-nav__list-item--catalog-color">
+                <li class="header-nav__list-item--catalog-color main-nav__toggle">
+                    
                     <svg class="header-nav__list-item--catalog-width-svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M.293.793a1 1 0 0 1 1.414 0L6 5.086 10.293.793a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414Z" fill="#B9C3CD"/>
                     </svg>
                     <svg class="header-nav__list-item--catalog-width-svg-none" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0a1 1 0 0 1 1 1v7h7a1 1 0 1 1 0 2h-7v7a1 1 0 1 1-2 0v-7H1a1 1 0 0 1 0-2h7V1a1 1 0 0 1 1-1Z" fill="#FF4C50"/>
                     </svg>
-                     <a class="header-nav__list-link header-nav__list-link--color-links" href="">
+                    <a class="header-nav__list-link header-nav__list-link--color-links" href="">
                         Ваши вещи (32) 
                     </a> 
                     <span class="header-nav__list-link--color-catalog-span">34 000 ₽</span>
+                
                 </li>
-                <li class="header-nav__list-item">
+                <li class="header-nav__list-item--display1">
                     <img class="header-nav__list-item-img--margin" src="./img/chinese-coin 1.png" alt="Коины" width="18px" height="20px">
                      <a class="header-nav__list-link" href="">Коины</a> 
                 </li>
@@ -70,7 +72,7 @@
                     <svg class="header-nav__list-item-img--margin" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.503 18.93A7.001 7.001 0 0 1 7.5 7.1V11a1 1 0 1 0 2 0V5a1 1 0 0 0-1-1h-6a1 1 0 0 0 0 2h3.292a9.001 9.001 0 0 0 5.71 14.945c.549.06.998-.393.998-.945 0-.552-.45-.992-.997-1.07ZM13.497 5.07A7.002 7.002 0 0 1 17.5 16.9V13a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2h-3.292a9.001 9.001 0 0 0-5.71-14.945c-.549-.06-.998.393-.998.945 0 .552.45.992.997 1.07Z" fill="#808D9A"/>
                     </svg>
-                     <a class="header-nav__list-link header-nav__list-link--width header-nav__list-link--display" href="">Ваши предложения</a>
+                     <a class="header-nav__list-link header-nav__list-link--width header-nav__list-link--display" href="">Ваши обмены</a>
                      <button class="header-nav__list-items-button">
                         3
                      </button>
@@ -81,33 +83,43 @@
                     </svg>
                </li>
             </ul>
-            <div class="popap main-nav--closed  main-nav--nojs main-nav popap1">
-                <section class="main-catalog__section-popap2">
-                    <section class="main-catalog__section-popap">
-                        <h2 class="main-catalog__header">Фильтр</h2>
-                        <p  class="main-catalog__paragraf-catalog2">Цена</p>
-                        
-                        <div class="main-catalog__div-catalog2" >
-                            <div id="range-slider" id="slider"  class="slider">
-                            
-                            </div>
-                            <label class="main-catalog2__label">
-                                <span class="main-catalog2__span">От</span>
-                                <input class="main-catalog__input main-catalog__input--margin" min="1" max="10" type="number" placeholder="" id="input-0">
-                            </label>
-                            <label class="main-catalog2__label">
-                                <span class="main-catalog2__span">До</span>
-                                <input class="main-catalog__input" min="1" max="10" type="number" placeholder="" id="input-1">
-                            </label>
+            <div class="popap-nav main-nav--closed  main-nav--nojs main-nav">
+                <button class="popap-nav__button">
+                    <svg class="header-nav__list-item-img--margin" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 1a1 1 0 0 1 1 1v7h7a1 1 0 1 1 0 2h-7v7a1 1 0 1 1-2 0v-7h-7a1 1 0 1 1 0-2h7V2a1 1 0 0 1 1-1Z" fill="#FF4C50" stroke="#FF4C50" stroke-width=".5" stroke-linecap="round"/>
+                    </svg>
+                    Добавить вещь
+                </button>
+                <div>
+                    <div class="section__list-item-transform--shodow1">
+                        <img class="section__list-item-transform--shodow-size" src="./img/photo1.jpg" alt="Машина" width="55px" height="55px">
+                        <div class="">
+                            <p class="section__list-size section__list-siz">Ford Thunderbird, 1972</p>
+                            <span class="section__span">354 800 ₽</span>
                         </div>
-                        <div class="popap__div">
-                            <button class="popap-button button popap-button--margin">Применить</button>
+                    </div>
+                    <div class="section__list-item-transform--shodow1">
+                        <img class="section__list-item-transform--shodow-size" src="./img/photo1.jpg" alt="Машина" width="55px" height="55px">
+                        <div class="">
+                            <p class="section__list-size section__list-siz">Ford Thunderbird, 1972</p>
+                            <span class="section__span">354 800 ₽</span>
                         </div>
-                        <div class="popap__div">
-                            <button class="popap-button button button popap-button--color">Отмена</button>
+                    </div>
+                    <div class="section__list-item-transform--shodow1">
+                        <img class="section__list-item-transform--shodow-size" src="./img/photo1.jpg" alt="Машина" width="55px" height="55px">
+                        <div class="">
+                            <p class="section__list-size section__list-siz">Ford Thunderbird, 1972</p>
+                            <span class="section__span">354 800 ₽</span>
                         </div>
-                    </section>
-                </section>
+                    </div>
+                    <div class="section__list-item-transform--shodow1">
+                        <img class="section__list-item-transform--shodow-size" src="./img/photo1.jpg" alt="Машина" width="55px" height="55px">
+                        <div class="">
+                            <p class="section__list-size section__list-siz">Ford Thunderbird, 1972</p>
+                            <span class="section__span">354 800 ₽</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -603,8 +615,31 @@
             <p class="footer__paragraf">© 1764 – 2021 Exch/Goods. <br> Все права защищены.</p>
         </div>
     </footer>
-    <script src="./script.js">
-             
-    </script>    
+    <script>
+      
+        let navMain = document.querySelector('.main-nav');
+          let navToggle = document.querySelector('.main-nav__toggle');
+  
+          navMain.classList.remove('main-nav--nojs');
+  
+          navToggle.addEventListener('click', function () {
+          if (navMain.classList.contains('main-nav--closed')) {
+              navMain.classList.remove('main-nav--closed');
+              navMain.classList.add('main-nav--opened');
+          } else {
+              navMain.classList.add('main-nav--closed');
+              navMain.classList.remove('main-nav--opened');
+          }
+          });
+  
+          const items = document.querySelectorAll('.section-product__list-item');
+  
+              items.forEach(item => {
+              item.addEventListener('click', function() {
+              items.forEach(elem => elem.classList.remove('section-product__list-item--color'));
+              this.classList.add('section-product__list-item--color');
+    });
+  })
+      </script>   
 </body>
 </html>
