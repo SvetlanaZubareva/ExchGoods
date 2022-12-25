@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <link rel="stylesheet" href="./style.css">
+    <link href="./node_modules/nouislider/dist/nouislider.css" rel="stylesheet">
+    <script src="./node_modules/nouislider/dist/nouislider.js"></script>
+    <link rel="stylesheet" href="./node_modules/nouislider/dist/nouislider.min.mjs">
+    
+    <title>ExchGoods</title>
+</head>
+<body>
+    <header class="main-header">
+        <ul class="main-header-list">
+            <li class="main-header-list__item">
+                <svg class="main-header-list--margin" width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 .75c3.824 0 6.75 2.996 6.75 6.955 0 2.401-1.721 5.356-5.115 8.944l-.089.089a2.25 2.25 0 0 1-3.18-.089C1.97 13.061.25 10.106.25 7.705.25 3.745 3.176.75 7 .75Zm0 1.5c-2.987 0-5.25 2.316-5.25 5.455 0 1.916 1.552 4.58 4.705 7.913a.75.75 0 0 0 1.09 0c3.153-3.333 4.705-5.997 4.705-7.913C12.25 4.566 9.987 2.25 7 2.25Zm0 3c-1.187 0-2.25 1.063-2.25 2.25S5.813 9.75 7 9.75 9.25 8.687 9.25 7.5 8.187 5.25 7 5.25Zm0-1.5c2.016 0 3.75 1.734 3.75 3.75S9.016 11.25 7 11.25 3.25 9.516 3.25 7.5 4.984 3.75 7 3.75Z" fill="#B9C3CD"/>
+                </svg>
+                <span class="main-header-list__item--color main-header-list--margin"> Ваш город: </span>
+                Москва
+            </li>
+            <li class="main-header-list__item">8 800 200 20 20</li>
+        </ul>
+        <nav class="header-nav">
+            <ul class="header-nav__list-catalog">
+                <li class="header-nav__list-item">
+                     <a class="header-nav__list-link header-nav__list-link--color-logo" href="index.html">Exch/Goods</a> 
+                     <a class="header-nav__list-link header-nav__list-link--size" href="">Сервис обмена вещей</a>
+                </li>
+                <li class="header-nav__list-item header-nav__list-item--color">
+                    <span class="visually-hidden ">Сердце</span>
+                    <a class="header-nav__list-link" href="">
+                        <svg width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z" fill="#FF4C50"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="header-nav__list-item--catalog-width main-nav__toggle">
+                    <svg class="header-nav__list-item--catalog-width-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.364.636a1 1 0 0 1 0 1.414L8.414 7l4.95 4.95a1 1 0 0 1-1.414 1.414L7 8.414l-4.95 4.95A1 1 0 0 1 .636 11.95L5.586 7 .636 2.05A1 1 0 0 1 2.05.636L7 5.586l4.95-4.95a1 1 0 0 1 1.414 0Z" fill="#fff"/>
+                    </svg>
+                    <svg class="header-nav__list-item--catalog-width-svg-none" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 4a2 2 0 1 0 0-4 2 2 0 0 0 0 4ZM7 1a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7ZM7 7a1 1 0 0 0 0 2h10a1 1 0 1 0 0-2H7ZM6 14a1 1 0 0 1 1-1h10a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1ZM4 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM2 16a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" fill="#fff"/>
+                    </svg>
+                     <a class="header-nav__list-link header-nav__list-link--color" href="">Правила обмена</a> 
+                </li>
+                <li class="header-nav__list-item--catalog-color">
+                    <svg class="header-nav__list-item--catalog-width-svg" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M.293.793a1 1 0 0 1 1.414 0L6 5.086 10.293.793a1 1 0 1 1 1.414 1.414l-5 5a1 1 0 0 1-1.414 0l-5-5a1 1 0 0 1 0-1.414Z" fill="#B9C3CD"/>
+                    </svg>
+                    <svg class="header-nav__list-item--catalog-width-svg-none" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0a1 1 0 0 1 1 1v7h7a1 1 0 1 1 0 2h-7v7a1 1 0 1 1-2 0v-7H1a1 1 0 0 1 0-2h7V1a1 1 0 0 1 1-1Z" fill="#FF4C50"/>
+                    </svg>
+                     <a class="header-nav__list-link header-nav__list-link--color-links" href="">
+                        Ваши вещи (32) 
+                    </a> 
+                    <span class="header-nav__list-link--color-catalog-span">34 000 ₽</span>
+                </li>
+                <li class="header-nav__list-item">
+                    <img class="header-nav__list-item-img--margin" src="./img/chinese-coin 1.png" alt="Коины" width="18px" height="20px">
+                     <a class="header-nav__list-link" href="">Коины</a> 
+                </li>
+                <li class="header-nav__list-items header-nav__list-item--margin header-nav__list-item--catalog-none">
+                    <svg class="header-nav__list-item-img--margin" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.503 18.93A7.001 7.001 0 0 1 7.5 7.1V11a1 1 0 1 0 2 0V5a1 1 0 0 0-1-1h-6a1 1 0 0 0 0 2h3.292a9.001 9.001 0 0 0 5.71 14.945c.549.06.998-.393.998-.945 0-.552-.45-.992-.997-1.07ZM13.497 5.07A7.002 7.002 0 0 1 17.5 16.9V13a1 1 0 1 0-2 0v6a1 1 0 0 0 1 1h6a1 1 0 1 0 0-2h-3.292a9.001 9.001 0 0 0-5.71-14.945c-.549-.06-.998.393-.998.945 0 .552.45.992.997 1.07Z" fill="#808D9A"/>
+                    </svg>
+                     <a class="header-nav__list-link header-nav__list-link--width header-nav__list-link--display" href="">Ваши предложения</a>
+                     <button class="header-nav__list-items-button">
+                        3
+                     </button>
+                </li>
+                <li class="header-nav__list-item header-nav__list-item--margin">
+                    <a class="header-nav__list-link header-nav__list-link--display" href="">Джон Голт</a>
+                    <svg class="header-nav__list-item-img--margin1" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="20" fill="#B9C3CD"/><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40" height="40"><circle cx="20" cy="20" r="20" fill="#F3F5F7"/></mask><g filter="url(#b)" mask="url(#a)"><path d="M12.286 26.286c-1.943-.343-2.334-2.715-2.286-3.858.048-1.142 2-8.142 2-8.142h16.286s1.952 7 2 8.143c.047 1.142-.343 3.514-2.286 3.857-.286 1.81-1.714 4.285-5.571 5.428v2c1.857.381 5.685 1.514 6.143 3 .457 1.486.857 3.19 1 3.857H10.713c.143-.666.543-2.371 1-3.857.457-1.486 4.286-2.619 6.143-3v-2c-3.857-1.143-5.285-3.619-5.571-5.428Z" fill="#F3F5F7"/><path fill-rule="evenodd" clip-rule="evenodd" d="M11.684 13.869h16.918l.085.305.084.304a240.13 240.13 0 0 1 .9 3.345c.247.948.497 1.934.688 2.757.186.803.33 1.498.343 1.831.026.617-.065 1.56-.43 2.41-.336.784-.93 1.53-1.912 1.81-.398 1.88-1.91 4.223-5.515 5.39v1.357c.933.21 2.204.566 3.34 1.037.638.264 1.248.571 1.736.918.477.338.894.755 1.049 1.259a52.555 52.555 0 0 1 1.009 3.892l.108.504H10.199l.108-.504c.144-.674.547-2.391 1.009-3.892.155-.504.572-.92 1.048-1.26.488-.346 1.1-.653 1.737-.917 1.136-.47 2.406-.827 3.34-1.037V32.02c-3.606-1.167-5.117-3.51-5.515-5.39-.983-.28-1.576-1.026-1.912-1.81-.366-.85-.456-1.793-.43-2.41.014-.333.156-1.028.343-1.831.19-.822.44-1.809.688-2.757a247.93 247.93 0 0 1 .9-3.345l.062-.225.021-.079.086-.305Zm.633.833a229.984 229.984 0 0 0-.896 3.332c-.247.945-.494 1.923-.683 2.734-.192.831-.312 1.44-.322 1.678-.022.526.06 1.34.363 2.047.301.7.793 1.244 1.58 1.382l.292.052.046.294c.26 1.647 1.572 3.996 5.279 5.094l.298.088v2.651l-.333.068c-.91.187-2.305.56-3.52 1.063-.61.252-1.157.531-1.574.827-.428.304-.661.586-.734.825-.363 1.179-.69 2.5-.879 3.318h17.817a51.198 51.198 0 0 0-.878-3.318c-.073-.24-.307-.521-.734-.825-.417-.296-.965-.575-1.574-.827-1.215-.504-2.61-.876-3.52-1.063l-.333-.068v-2.65l.298-.09c3.707-1.097 5.018-3.446 5.278-5.093l.047-.294.293-.052c.786-.139 1.278-.682 1.578-1.382.304-.708.385-1.521.363-2.047-.01-.238-.129-.847-.322-1.678a109.53 109.53 0 0 0-.682-2.734 247.07 247.07 0 0 0-.896-3.332H12.317Z" fill="#fff"/><path d="M22.192 15.882c3.345-.449 5.244.487 5.532.955 0 0 1.003 1.024 1.003 3.53v.039c0 2.13 0 2.934.43 3.305 2.163-2.382 4.715-13.155-4.514-16.238-10.152-2.915-13.555 2.149-13.987 5.045-2.71 4.611-1.287 8.998.443 11.193.43-.371.43-1.176.43-3.305v-.04c0-2.505 1.386-4.25 1.866-5.045 1.539.374 5.451 1.009 8.797.56Z" fill="#fff"/></g><defs><filter id="b" x="-7.423" y="-6.804" width="55.258" height="67.423" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="3.093"/><feGaussianBlur stdDeviation="8.247"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0.117647 0 0 0 0 0.313726 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_1751_2495"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_1751_2495" result="shape"/></filter></defs>
+                    </svg>
+               </li>
+            </ul>
+            <div class="popap main-nav--closed  main-nav--nojs main-nav popap1">
+                <section class="main-catalog__section-popap2">
+                    <section class="main-catalog__section-popap">
+                        <h2 class="main-catalog__header">Фильтр</h2>
+                        <p  class="main-catalog__paragraf-catalog2">Цена</p>
+                        
+                        <div class="main-catalog__div-catalog2" >
+                            <div id="range-slider" id="slider"  class="slider">
+                            
+                            </div>
+                            <label class="main-catalog2__label">
+                                <span class="main-catalog2__span">От</span>
+                                <input class="main-catalog__input main-catalog__input--margin" min="1" max="10" type="number" placeholder="" id="input-0">
+                            </label>
+                            <label class="main-catalog2__label">
+                                <span class="main-catalog2__span">До</span>
+                                <input class="main-catalog__input" min="1" max="10" type="number" placeholder="" id="input-1">
+                            </label>
+                        </div>
+                        <div class="popap__div">
+                            <button class="popap-button button popap-button--margin">Применить</button>
+                        </div>
+                        <div class="popap__div">
+                            <button class="popap-button button button popap-button--color">Отмена</button>
+                        </div>
+                    </section>
+                </section>
+            </div>
+        </nav>
+    </header>
+
+    <main > 
+        <section class="section-catalog2">
+            <ul class="section-catalog2__list">
+                <li class="section-catalog2__list-item">
+                    <a href="" class="section-catalog2__link">
+                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.584.313a.667.667 0 0 1 .833 0l6.666 5.333c.158.127.25.318.25.52v8a.667.667 0 0 1-.666.667h-4a.667.667 0 0 1-.667-.666V8.833H6v5.334a.667.667 0 0 1-.667.666h-4a.667.667 0 0 1-.666-.666v-8c0-.203.092-.394.25-.521L7.584.313Z" fill="#FF4C50"/><path d="M8.667 10.833a.667.667 0 1 0-1.334 0v3.334a.667.667 0 1 0 1.334 0v-3.334Z" fill="#FF4C50"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="section-catalog2__list-item">
+                    <a class="section-catalog2__link" href="">
+                        <svg class="section-catalog2__svg" width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2.5" r="2" fill="#FFBCBD"/>
+                        </svg>
+                        <span>Автомобили</span>
+                    </a>
+                </li>
+                <li class="section-catalog2__list-item">
+                    <a class="section-catalog2__link" href="">
+                        <svg class="section-catalog2__svg" width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2.5" r="2" fill="#FFBCBD"/>
+                        </svg>
+                        <span>Раритетные</span>
+                    </a>
+                </li>
+                <li class="section-catalog2__list-item">
+                    <a class="section-catalog2__link" href="">
+                        <svg class="section-catalog2__svg" width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2.5" r="2" fill="#FFBCBD"/>
+                        </svg>
+                        <span>На ходу</span>
+                    </a>
+                </li>
+                <li class="section-catalog2__list-item">
+                    <a class="section-catalog2__link" href="">
+                        <svg class="section-catalog2__svg" width="4" height="5" viewBox="0 0 4 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="2" cy="2.5" r="2" fill="#FFBCBD"/>
+                        </svg>
+                        <span>Отечественные</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <div class="main-catalog main-catalog--display">
+            <section class="main-catalog__section">
+                <h2 class="main-catalog__header">Категории</h2>
+                <ul class="main-catalog__list main-catalog__list--margin">
+                    <li class="main-catalog__list-item-catalog2">
+                        <svg class="main-catalog__list-item-catalog2-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.707.293a1 1 0 0 1 0 1.414L2.414 6l4.293 4.293a1 1 0 1 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0Z" fill="#808D9A"/>
+                        </svg>
+                        <a class="main-catalog__item-link" href="">
+                            Все категории
+                        </a>
+                    </li>
+                    <li class="main-catalog__list-item-catalog-2">
+                        <svg class="main-catalog__list-item-catalog2-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.707.293a1 1 0 0 1 0 1.414L2.414 6l4.293 4.293a1 1 0 1 1-1.414 1.414l-5-5a1 1 0 0 1 0-1.414l5-5a1 1 0 0 1 1.414 0Z" fill="#808D9A"/>
+                        </svg>
+                        <a class="main-catalog__item-link" href="">Транспорт</a>
+                    </li>
+                    <li class="main-catalog__list-item-catalog2 main-catalog__list-item-catalog2--color">
+                        <a class="main-catalog__item-link" href="">Автомобили</a>
+                    </li>
+                    <li class="main-catalog__list-item-catalog-2">
+                        <a class="main-catalog__item-link" href="">Старые</a>
+                    </li>
+                    <li class="main-catalog__list-item-catalog-2">
+                        <a class="main-catalog__item-link" href="">Новые</a>
+                    </li>
+                </ul>
+                <!-- <section class="main-catalog__section">
+                    <h2 class="main-catalog__header">Фильтр</h2>
+                    <p  class="main-catalog__paragraf-catalog2">Цена</p>
+                    
+                    <div class="main-catalog__div-catalog2" >
+                        <div id="range-slider" id="slider"  class="slider">
+                        
+                        </div>
+                        <label class="main-catalog2__label">
+                            <span class="main-catalog2__span">От</span>
+                            <input class="main-catalog__input main-catalog__input--margin" min="1" max="10" type="number" placeholder="" id="input-0">
+                        </label>
+                        <label class="main-catalog2__label">
+                            <span class="main-catalog2__span">До</span>
+                            <input class="main-catalog__input" min="1" max="10" type="number" placeholder="" id="input-1">
+                        </label>
+                    </div>
+                </section> -->
+            </section>
+            <section class="section-catalog">
+                <div class="section-catalog__list-catalog-div">
+                    <h2 class="section-catalog__list-catalog-h2">Сортировать по:</h2>
+                    <div class="section-catalog__class-div">
+                        <ul class="section-catalog__list-catalog">
+                            <li class="section-catalog__item-catalog">Цене</li>
+                            <li class="section-catalog__item-catalog">Рейтингу</li>
+                            <li class="section-catalog__item-catalog">Новизне</li>
+                            <li class="section-catalog__item-catalog">Просмотрам</li>
+                        </ul>
+                        <svg class="section-catalog__item-catalog-svg" width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 4V2H2v2.172a1 1 0 0 0 .293.707L8 10.586V16a1 1 0 0 0 .4.8L10 18v-7.414L14.586 6H8a1 1 0 0 1 0-2h8ZM6 11.414.879 6.293A3 3 0 0 1 0 4.172V2a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v2.172a3 3 0 0 1-.879 2.12L12 11.415V18a2 2 0 0 1-3.2 1.6l-1.6-1.2A3 3 0 0 1 6 16v-4.586Z" fill="#B9C3CD"/>
+                        </svg>
+                    </div>   
+                </div>
+                <ul class="section-catalog__list-catalog-item">
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">16 000 ₽</span>
+                        <div class='block'>
+                             <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                            </svg>
+                            <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">520 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">45 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">84 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">16 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">520 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">45 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">84 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">16 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">520 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">45 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">84 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (2).jpg" alt="Шина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">16 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (3).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">520 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (4).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">45 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="section-catalog__item-catalog-item holder">
+                        <img class="section-catalog__item-catalog-item-img" src="./img/Фотка вещи (5).jpg" alt="Машина">
+                        <p class="section-catalog__p-catalog">Наименование вещи</p>
+                        <span class="section-catalog__span-catalog">84 000 ₽</span>
+                        <div class='block'>
+                            <svg class="section-catalog__svg" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <rect width="44" height="44" rx="10" fill="#FF4C50"/><path d="M15.07 21.003A7.002 7.002 0 0 1 26.9 17H23a1 1 0 1 0 0 2h6a1 1 0 0 0 1-1v-6a1 1 0 1 0-2 0v3.292a9.001 9.001 0 0 0-14.945 5.71c-.06.549.393.998.945.998.552 0 .992-.45 1.07-.997ZM28.93 22.997A7.002 7.002 0 0 1 17.1 27H21a1 1 0 1 0 0-2h-6a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0v-3.292a9.001 9.001 0 0 0 14.945-5.71c.06-.549-.393-.998-.945-.998-.552 0-.992.45-1.07.997Z" fill="#fff"/>
+                           </svg>
+                           <div class="hover-svg__div">
+                                <svg class="hover-svg" width="25" height="21" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.253 2a6.283 6.283 0 0 0 0 8.886l1.472 1.47-.003.003 7.47 7.471c.13.13.273.238.425.324a2 2 0 0 0 2.416-.317l7.47-7.47-.009-.01 1.479-1.478a6.282 6.282 0 1 0-8.885-8.885L12.61 3.472l-1.472-1.471a6.283 6.283 0 0 0-8.885 0Z"/>
+                                </svg>
+                            </div>
+                       </div>
+                    </li>
+                </ul>
+                <ul class="section-product__list">
+                    <li class="section-product__list-item section-product__list-item--color1 section-product__list-item1">1</li>
+                    <li class="section-product__list-item section-product__list-item1">2</li>
+                    <li class="section-product__list-item section-product__list-item1">3</li>
+                    <li class="section-product__list-item section-product__list-item1">4</li>
+                    <li class="section-product__list-item section-product__list-item1">5</li>
+                    <li class="section-product__list-item section-product__list-item1">6</li>
+                    <li class="section-product__list-item section-product__list-item1">7</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__div">
+            <h2 class="footer__header">Основные категории</h2>
+            <ul class="footer__list footer__list--grid footer__list--display-none">
+                <li class="footer__list-item">Категория 1</li>
+                <li class="footer__list-item">Категория 9</li>
+                <li class="footer__list-item">Категория 2</li>
+                <li class="footer__list-item">Категория 10</li>
+                <li class="footer__list-item">Категория 3</li>
+                <li class="footer__list-item">Категория 11</li>
+                <li class="footer__list-item">Категория 4</li>
+                <li class="footer__list-item">Категория 12</li>
+                <li class="footer__list-item">Категория 5</li>
+                <li class="footer__list-item">Категория 13</li>
+                <li class="footer__list-item">Категория 6</li>
+                <li class="footer__list-item">Категория 14</li>
+                <li class="footer__list-item">Категория 7</li>
+                <li class="footer__list-item">Категория 15</li>
+                <li class="footer__list-item">Категория 8</li>
+                <li class="footer__list-item">Категория 16</li>
+            </ul>
+            <select class="select" name="select">
+                <option value="value1" selected></option>
+                <option value="value1" >Категория 1</option>
+                <option value="value2" >Категория 2</option>
+                <option value="value3">Категория 3</option>
+                <option value="value4" >Категория 4</option>
+                <option value="value5">Категория 5</option>
+                <option value="value6" >Категория 6</option>
+                <option value="value7">Категория 7</option>
+                <option value="value8" >Категория 8</option>
+                <option value="value9">Категория 9</option>
+                <option value="value10" >Категория 10</option>
+                <option value="value11">Категория 11</option>
+                <option value="value12" >Категория 12</option>
+                <option value="value13">Категория 13</option>
+                <option value="value14" >Категория 14</option>
+                <option value="value15">Категория 15</option>
+                <option value="value16" >Категория 16</option>
+                <option value="value17" >Категория 17</option>
+            </select>
+        </div>
+        <div class="footer__div">
+            <h2 class="footer__header">Компания</h2>
+            <ul class="footer__list footer__list--display-none">
+                <li class="footer__list-item">О нас</li>
+                <li class="footer__list-item">Услуги</li>
+                <li class="footer__list-item">Новости</li>
+                <li class="footer__list-item">Вакансии</li>
+                <li class="footer__list-item">Реквизиты</li>
+                <li class="footer__list-item">Обратная связь</li>
+            </ul>
+            <select class="select" name="select">
+                <option value="value1" selected></option>
+                <option value="value1" >О нас</option>
+                <option value="value2" >Услуги</option>
+                <option value="value3">Новости</option>
+                <option value="value4" >Вакансии</option>
+                <option value="value5">Реквизиты</option>
+                <option value="value6" >Обратная связь</option>
+            </select>
+        </div>
+        <div class="footer__div">
+            <h2 class="footer__header">Помощь</h2>
+            <ul class="footer__list footer__list--display-none">
+                <li class="footer__list-item">Как совершать обмен</li>
+                <li class="footer__list-item">Безопасность сделки</li>
+                <li class="footer__list-item">Реквизиты</li>
+            </ul>
+            <select class="select" name="select">
+                <option value="value1" selected></option>
+                <option value="value1" >Как совершать обмен</option>
+                <option value="value2" >Безопасность сделки</option>
+                <option value="value3">Реквизиты</option>
+            </select>
+        </div>
+        <div class="footer__div footer__div--column">
+            <h2 class="footer__header">Мы в соцсетях</h2>
+            <ul class="footer__list footer__list--flex">
+                <li class="footer__list-item">
+                    <span class="visually-hidden">Инстаграмм</span>
+                    <a href="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.556 0A5.555 5.555 0 0 0 0 5.556v8.888A5.555 5.555 0 0 0 5.556 20h8.888A5.555 5.555 0 0 0 20 14.444V5.556A5.555 5.555 0 0 0 14.444 0H5.556Zm11.11 2.222c.613 0 1.112.5 1.112 1.111 0 .612-.5 1.111-1.111 1.111-.612 0-1.111-.499-1.111-1.11 0-.613.499-1.112 1.11-1.112ZM10 4.444a5.555 5.555 0 1 1 0 11.112 5.555 5.555 0 1 1 0-11.112Zm0 2.223a3.334 3.334 0 1 0 .002 6.668A3.334 3.334 0 0 0 10 6.667Z" fill="#B9C3CD"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <span class="visually-hidden">Фейсбук</span>
+                    <a href="">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0c5.523 0 10 4.477 10 10 0 4.991-3.657 9.128-8.438 9.878v-6.987h2.33L14.337 10h-2.774V8.125c0-.78.377-1.54 1.576-1.562h1.315V4.101s-.876-.15-1.828-.187a10.484 10.484 0 0 0-.41-.009c-2.285 0-3.777 1.385-3.777 3.89V10h-2.54v2.89h2.54v6.988C3.657 19.128 0 14.991 0 10 0 4.477 4.477 0 10 0Z" fill="#B9C3CD"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <span class="visually-hidden">Твиттер</span>
+                    <a href="">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.802 4.423v.63c0 6.001-4.56 12.947-12.89 12.947-2.51 0-4.868-.79-6.912-2.048h1.099c2.044 0 4.088-.79 5.66-1.9-2.045 0-3.616-1.419-4.242-3.158.313 0 .626.16.785.16.467 0 .786 0 1.253-.16-2.038-.47-3.61-2.209-3.61-4.417.626.315 1.253.469 2.038.63C1.731 6.001.945 4.736.945 3.157c0-.79.154-1.579.626-2.208 2.198 2.683 5.5 4.577 9.27 4.737 0-.32-.154-.635-.154-1.11C10.687 2.054 12.73 0 15.242 0c1.258 0 2.516.475 3.302 1.419 1.099-.154 2.044-.63 2.83-1.104-.32 1.104-1.105 1.893-2.044 2.529.939-.16 1.725-.315 2.67-.79-.626.944-1.412 1.734-2.198 2.369Z" fill="#B9C3CD"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <span class="visually-hidden">Твиттер</span>
+                    <a href="">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.802 4.423v.63c0 6.001-4.56 12.947-12.89 12.947-2.51 0-4.868-.79-6.912-2.048h1.099c2.044 0 4.088-.79 5.66-1.9-2.045 0-3.616-1.419-4.242-3.158.313 0 .626.16.785.16.467 0 .786 0 1.253-.16-2.038-.47-3.61-2.209-3.61-4.417.626.315 1.253.469 2.038.63C1.731 6.001.945 4.736.945 3.157c0-.79.154-1.579.626-2.208 2.198 2.683 5.5 4.577 9.27 4.737 0-.32-.154-.635-.154-1.11C10.687 2.054 12.73 0 15.242 0c1.258 0 2.516.475 3.302 1.419 1.099-.154 2.044-.63 2.83-1.104-.32 1.104-1.105 1.893-2.044 2.529.939-.16 1.725-.315 2.67-.79-.626.944-1.412 1.734-2.198 2.369Z" fill="#B9C3CD"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <span class="visually-hidden">Твиттер</span>
+                    <a href="">
+                        <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.802 4.423v.63c0 6.001-4.56 12.947-12.89 12.947-2.51 0-4.868-.79-6.912-2.048h1.099c2.044 0 4.088-.79 5.66-1.9-2.045 0-3.616-1.419-4.242-3.158.313 0 .626.16.785.16.467 0 .786 0 1.253-.16-2.038-.47-3.61-2.209-3.61-4.417.626.315 1.253.469 2.038.63C1.731 6.001.945 4.736.945 3.157c0-.79.154-1.579.626-2.208 2.198 2.683 5.5 4.577 9.27 4.737 0-.32-.154-.635-.154-1.11C10.687 2.054 12.73 0 15.242 0c1.258 0 2.516.475 3.302 1.419 1.099-.154 2.044-.63 2.83-1.104-.32 1.104-1.105 1.893-2.044 2.529.939-.16 1.725-.315 2.67-.79-.626.944-1.412 1.734-2.198 2.369Z" fill="#B9C3CD"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer__list-item">
+                    <span class="visually-hidden">Вконтакте</span>
+                    <a href="">
+                        <svg width="24" height="14" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="m22.901 13.947-3.2.04s-.69.137-1.595-.498c-1.198-.841-2.33-3.028-3.214-2.741-.89.294-.864 2.255-.864 2.255s.007.349-.194.575c-.221.246-.656.218-.656.218h-1.434s-3.167.267-5.953-2.7C2.75 7.863.065 1.473.065 1.473S-.09 1.069.078.864C.266.64.781.632.781.632l3.43-.014s.32.055.555.226c.187.143.295.417.295.417s.556 1.428 1.292 2.727c1.433 2.536 2.103 3.09 2.585 2.816.71-.396.496-3.575.496-3.575s.013-1.155-.355-1.668c-.288-.403-.83-.519-1.065-.553-.194-.028.12-.485.53-.69.615-.308 1.707-.329 2.993-.315 1.004.014 1.292.075 1.687.17 1.179.295.784 1.423.784 4.122 0 .869-.154 2.085.455 2.488.262.178.904.028 2.512-2.76.763-1.327 1.332-2.878 1.332-2.878s.128-.274.322-.397.462-.082.462-.082l3.61-.02s1.085-.137 1.259.369c.187.526-.402 1.75-1.876 3.759-2.424 3.294-2.692 2.987-.683 4.894 1.922 1.825 2.324 2.713 2.385 2.823.796 1.346-.885 1.456-.885 1.456Z" fill="#B9C3CD"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <p class="footer__paragraf">© 1764 – 2021 Exch/Goods. <br> Все права защищены.</p>
+        </div>
+    </footer>
+    <script>
+            let navMain = document.querySelector('.main-nav');
+let navToggle = document.querySelector('.main-nav__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+} else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+}
+});   
+
+    const rangeSlider = document.getElementById("range-slider");
+
+    if (rangeSlider) {
+        noUiSlider.create(rangeSlider, {
+            start: [5, 8],
+            connect: true,
+            step: 1,
+            range: {
+                'min': 1,
+                'max': 10
+                    }
+    });
+
+    const input0 = document.getElementById("input-0");
+    const input1 = document.getElementById("input-1");
+    const inputs = [input0, input1];
+
+    rangeSlider.noUiSlider.on("update", function(values, handle) {
+        inputs[handle].value = Math.round(values[handle]);
+    });
+
+    const setRangeSlider = (i, value) => {
+        let arr = [null, null];
+        arr[i] = value;
+        console.log(arr);
+        rangeSlider.noUiSlider.set(arr)
+    };
+
+    inputs.forEach((el, index) => {
+        el.addEventListener("change", (e)=> {
+            console.log(index)
+        setRangeSlider(index, e.currentTarget.value);
+        });
+        
+    })
+    
+    }
+
+
+
+    const items = document.querySelectorAll('.section-product__list-item1');
+
+items.forEach(item => {
+item.addEventListener('click', function() {
+items.forEach(elem => elem.classList.remove('section-product__list-item--color1'));
+this.classList.add('section-product__list-item--color1');
+});
+}) 
+    </script>    
+</body>
+</html>
