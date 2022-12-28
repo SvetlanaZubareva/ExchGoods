@@ -8,6 +8,13 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  /* @font-face {
+   font-family: "RF Dewi";
+   font-style: normal;
+   font-weight: 400;
+   src: url("./font/RFDewi-Black.woff2") format("woff2");
+   font-display: swap;
+ } */
   
   html {
     height: 100%;
@@ -51,6 +58,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .border-color-none{
+   border-color: none;
+  }
+  .width{
+   width: 129px;
   }
   .main-header-list__item--color{
     color: rgba(128, 141, 154, 1);
@@ -1703,9 +1716,8 @@ li{
       top: 1590px;
       left: -470px;
    }
-   br{
-      content: "";
-   }
+   
+   
    .section__list-item-svg--margin-display3{
       position: relative;
       top: -100px;
@@ -1995,7 +2007,7 @@ li{
    }
    .exchange-input__input{
       padding: 8px 16px 10px;
-      width: 604px;
+      width: 288px;
       height: 38px;
       background: #F6F7FA;
       border-radius: 35px;
@@ -2072,6 +2084,10 @@ li{
    .exchange-page2__modal--color{
       background-color: #ffff;
       width: 340px;
+      padding: 20px;
+   }
+   .exchange-page2__modal--color10{
+      padding: 20px;
    }
    .page-div__div--flex2{
       margin-bottom: 211px;
@@ -2268,6 +2284,7 @@ li{
       height: 31px;
       margin-right: 13px;
       margin-bottom: 16px;
+      position: relative;
    }
    .add-to-exchange__ul{
       display: flex;
@@ -2349,9 +2366,9 @@ li{
    .add-to-exchange-div2__li--flex{
       margin-right: 33px;
    }
-   .add-to-exchange__li:active{
+   /* .add-to-exchange__li:active{
       border: 2px solid rgba(255, 76, 80, 1);
-   }
+   } */
    .exchange-page10-div__p{
       width: 220px;
       margin-right: 60px;
@@ -2462,6 +2479,12 @@ li{
       top: -10px;
       left: 70px;
    }
+   .border-color{
+      border: 1px solid #FF4C50;
+   }
+   .add-to-exchange__li--color-svg2{
+      left: 90px;
+   }
    .add-to-exchange__li--color-svg1{
       left: 140px;
    }
@@ -2477,6 +2500,12 @@ li{
    .section__list-paragraf{
       width: 400px;
    }
+   .exchange-input__input10{
+      width: 288px;
+   }
+   #main {
+      display: none;
+     }
    @media(max-width:1400px){
       .header-nav__list-item:nth-child(4){
          margin-right: 25%;
